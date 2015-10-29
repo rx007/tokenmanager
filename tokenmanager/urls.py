@@ -21,6 +21,6 @@ urlpatterns = [
     # url(r'^admin/', include(admin.site.urls)),
 
     url(r'^token$', TokenDetailView.as_view(), name="token_detail"),
-    url(r'^token/update$', TokenFormView.as_view(), name="token_form"),
+    url(r'^token/update$', TokenIssueView.as_view(), name="token_form"),
     url(r'^token/api$', TokenDetailAPIView.as_view(), name="token_detail_api"),
 ]
